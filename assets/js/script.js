@@ -1,3 +1,5 @@
+const membersOutput = document.getElementById('members-output');
+
 const members = [
   {
     name: 'Wayne Barnett',
@@ -33,4 +35,7 @@ const members = [
 
 for (let member of members) {
   console.log(member);
+  membersOutput.innerHTML += `
+  <li>Membro: ${member.name} | ${member.role} | ${member.image}</li>
+  `
 }
