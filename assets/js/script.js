@@ -36,6 +36,9 @@ const members = [
 for (let member of members) {
   console.log(member);
   membersOutput.innerHTML += `
-  <li>Membro: ${member.name} | ${member.role} | ${member.image}</li>
+  <li>
+    Membro: ${member.name} | ${member.role} |
+    <img src="assets/img/${member.image}">
+  </li>
   `
 }
